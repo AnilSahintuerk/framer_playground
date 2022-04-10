@@ -1,7 +1,7 @@
 {
   "name": "framer_playground",
   "version": "0.1.0",
-  "homepage": "https://anilsahintuerk.github.io/framer-playground",
+  "homepage": "https://AnilSahintuerk.github.io/framer-playground",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
