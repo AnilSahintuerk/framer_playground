@@ -1,0 +1,52 @@
+{select && (
+        <AnimateSharedLayout>
+          <AnimatePresence>
+            <motion.div
+              layout
+              key={select}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 300, opacity: 0 }}
+            >
+              <Center mt="5rem">
+                <Flex
+                  w="520px"
+                  h="164px"
+                  background="#e3e3e3"
+                  alignItems="center"
+                  borderRadius="16px"
+                  position="relative"
+                >
+                  <Image
+                    src={select + ".jpg"}
+                    ml="16px"
+                    boxSize="128px"
+                    objectFit="cover"
+                    borderRadius="16px"
+                  />
+                  <Stack
+                    alignItems="flex-start"
+                    pl="8px"
+                    justifyContent="flex-start"
+                  >
+                    <Text fontSize="32px" m="0">
+                      Software Engineer
+                    </Text>
+                    <Text fontSize="24px">My Name</Text>
+                    <Text fontSize="16px">
+                      This is dummy text for this demo application
+                    </Text>
+                  </Stack>
+                  <CloseIcon
+                    position="absolute"
+                    w={15}
+                    h={15}
+                    top="16px"
+                    right="16px"
+                    onClick={() => setSelect(null)}
+                  ></CloseIcon>
+                </Flex>
+              </Center>
+            </motion.div>
+          </AnimatePresence>
+        </AnimateSharedLayout>
+      )}
